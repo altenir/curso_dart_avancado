@@ -31,31 +31,34 @@ funcaoClosures() {
   print(descontarDez(100));
   print(descontarVinte(200));
 
-  print('06.5.1) Clousures com Objetos\n');
+  ///
+  /// 06.5.1) Clousures com Objetos
+  ///
+  print('\n06.5.1) Clousures com Objetos\n');
   var novoObjeto = () {
     var id = 0;
     var objetoCriado = (String nome, descricao) {
       // return 'id: ${(++id).toString().padLeft(2, '0')} nome: $nome, descrição: $descricao'; // retorna array
       // return {'id': (++id).toString().padLeft(2, '0'), 'nome': nome, descrição': descricao}; // retorna Map
-
       return Objeto.fromMap({
         'id': (++id).toString().padLeft(2, '0'),
         'nome': nome,
-        'descrição': descricao
+        'descricao': descricao
       }); // retorna um Objeto
     };
     return objetoCriado;
   };
 
   var objeto = novoObjeto();
-  print(objeto);
+  print('linha 53 $objeto');
 
   var listaObjetos = [objeto('Fernando', 1.99)];
   listaObjetos.add(objeto('iPhone', 3000.00));
   listaObjetos.add(objeto('Fones', 100));
+  listaObjetos.add(objeto('Teste', 1));
 
   for (var objeto in listaObjetos) {
-    // print(objeto);
+    // print('linha 60 ${objeto.nome}');
     // print(objeto.substring(7));
     // print(objeto.map((c, v) => MapEntry(c, (v is double) ? '${descontarDez(v)}' : v)));
     print((objeto.descricao is num)

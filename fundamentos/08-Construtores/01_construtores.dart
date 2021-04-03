@@ -27,7 +27,7 @@ void main() {
   usuario.autenticar();
 
 // dados inseridos pelo administrador
-  Usuario admin = Usuario.admin('user@gmail', '12333456', nome: 'Fernando');
+  Usuario admin = Usuario.admin('user@gmail', '123456654', nome: 'Fernando');
   print(
       '\nadmin: ${admin.user}, senha: ${admin.senha}, nome: ${admin.nome}, cargo: ${admin.cargo}\n');
   admin.autenticar();

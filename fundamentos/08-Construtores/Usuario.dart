@@ -22,6 +22,7 @@ class Usuario {
     var senha = '123456';
     (this.user == user && this.senha == senha)
         ? print('Usuário autenticado')
-        : print(this.toString());
+        // : print(this.toString());
+        : print('Usuário Não Autenticado!');
   }
 }
