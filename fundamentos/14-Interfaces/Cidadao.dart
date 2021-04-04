@@ -16,6 +16,6 @@ abstract class Cidadao {
   void objetivosPessoais();
 
   void direitosDeveres() {
-    print('Toto cidadao tem direitos e deveres');
+    print('Todo cidadao tem direitos e deveres');
   }
 }
