@@ -11,7 +11,7 @@
 import 'Candidato.dart';
 
 void main() {
-  print('15.) Interfaces');
+  print('14.0) Interfaces');
 
   var bolsonaro = Candidato('Bolsonaro', ideologia: 'Direita', partido: 'PSL');
   bolsonaro
