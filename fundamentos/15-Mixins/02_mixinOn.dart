@@ -57,7 +57,7 @@ class Musico extends Artista with Dancarino, Cantor implements Acao {
   }
 }
 
-// A classe MC não pode cantar porque não extends de Artista
+// A classe MC não pode cantar nem dançar porque ele não extends de Artista
 class MC /**with Dancarino */ implements Acao {
   void acao() => print('Mixa .. bota o batidão');
 
