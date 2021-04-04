@@ -29,3 +29,6 @@ void main() {
   print(
       '${cao.nome} ${cao.docil == true ? 'está amigavel' : 'não está amigavel'}');
 }
+
+//? Desafio: criar uma classe Abelha que herda de Antropodes com os construtores(insetos, aracnideos e crsutaceos)
+//? que herde de Animal no construtor Invertebrado
