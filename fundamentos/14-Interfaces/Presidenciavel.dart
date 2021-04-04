@@ -11,5 +11,5 @@ abstract class Presidenciavel {
   String? partido;
   String? ideologia;
 
-  void ideologiaPolitica();
+  void ideologiaPolitica(); // método sem escopo
 }

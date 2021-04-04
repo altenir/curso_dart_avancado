@@ -13,7 +13,7 @@ abstract class Cidadao {
 
   Cidadao(this.nome);
 
-  void objetivosPessoais();
+  void objetivosPessoais(); // método sem escopo
 
   void direitosDeveres() {
     print('Todo cidadao tem direitos e deveres');
