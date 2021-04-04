@@ -6,7 +6,7 @@
   - A instancia pode ser acessada diretamente
 */
 
-import 'PessoaStatic.dart';
+import '../1-Static/PessoaStatic.dart';
 
 void main() {
   print('11.1) Singletons Static\n');
