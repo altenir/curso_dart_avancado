@@ -7,6 +7,7 @@
 
 ///
 /// * Reduce
+/// - Compara os elementos da coelção retornando 1 unico elemento resultante!
 /// - Ao interagir com os elementos o indice 0 se torna o anterior, indice 1 se torna o atual
 ///
 
@@ -21,13 +22,21 @@ listReduce() {
   });
   print(resultado);
 
+//##############################
   List<bool> boleanas = [true, false, !true, !false];
   bool and = boleanas.reduce((anterior, atual) => anterior && atual);
   bool or = boleanas.reduce((atual, anterior) => anterior || atual);
   print('and: $and or: $or');
 
-  List<int> idades [36,12,18,31,17,23];
-  int maisNovo = idades.remove((anterior, atual) =>(anterior > atual) ? atual : anterior);
+//##############################
+  List<int> idades = [36, 12, 18, 31, 17, 23];
+  int maisNovo =
+      idades.reduce((anterior, atual) => (anterior > atual) ? atual : anterior);
+  int maisVelho =
+      idades.reduce((anterior, atual) => (anterior < atual) ? atual : anterior);
+  int media = idades.reduce((anterior, atual) => anterior + atual);
+  print(
+      'maisNovo: $maisNovo maisVelho: $maisVelho media: ${(media / idades.length).toStringAsFixed(1)}');
 }
 
 void main() {
