@@ -20,8 +20,6 @@
   https://www.treinaweb.com.br/blog/o-que-sao-mixins-e-qual-sua-importancia-no-dart/
 */
 
-import 'dart:collection';
-
 abstract class Cidadao {
   String? nome;
 
