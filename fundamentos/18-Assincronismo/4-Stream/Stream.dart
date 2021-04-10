@@ -73,23 +73,23 @@ class Contador {
 model() {
   print('\n18.4.2) Stream Model\n');
   // stream
-  var minhaStream = Contador(termino: 5, erro: 3).stream;
+  // var minhaStream = Contador(termino: 5, erro: 3).stream;
 
   // inscricao de ouvintes na stream
-  final inscrito1 = minhaStream.listen(
-      (onData) {
-        print('Inscrito1: $onData');
-      },
-      onError: (erro) {
-        print('Inscrito1: $erro');
-      },
-      cancelOnError: false,
-      onDone: () {
-        print('Inscrito1 Completo');
-      });
+  // final inscrito1 = minhaStream.listen(
+  //     (onData) {
+  //       print('Inscrito1: $onData');
+  //     },
+  //     onError: (erro) {
+  //       print('Inscrito1: $erro');
+  //     },
+  //     cancelOnError: false,
+  //     onDone: () {
+  //       print('Inscrito1 Completo');
+  //     });
 
-  var pares = (e) => e % 2 == 0;
-  var mapear = (e) => '$e é par';
+  // var pares = (e) => e % 2 == 0;
+  // var mapear = (e) => '$e é par';
 
 // AULA 55 INCOMPLETA DEVIDO A ERROS
 // VOLTAR PARA COMPLETAR DEPOIS DE ADQUIRIR MAIS CONHECIMENTO

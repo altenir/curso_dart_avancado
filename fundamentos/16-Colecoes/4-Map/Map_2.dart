@@ -1,5 +1,3 @@
-import 'dart:async';
-
 ///
 ///  * Map
 ///  - Map transforma/seleciona os elementos de uma colecao criando uma nova do mesmo tamanho

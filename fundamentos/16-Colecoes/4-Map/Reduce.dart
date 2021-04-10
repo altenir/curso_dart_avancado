@@ -1,5 +1,3 @@
-import 'dart:math';
-
 ///
 /// * Conceito
 ///  - Reduce compara os elementos da colecao retornando 1 unico elemento resultante

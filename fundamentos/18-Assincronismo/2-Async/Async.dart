@@ -14,8 +14,6 @@
   - Deve ser usado em toda função que tenha operações assincronas, Await!
 */
 
-import 'dart:ffi';
-
 ///
 /// *FUNÇÕES ASSÍNCRONAS
 ///

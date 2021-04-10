@@ -23,17 +23,16 @@ listMap() {
   List<int> inteirosMapeados = inteiros.map(incrementar).map(dobro).toList();
   print(inteirosMapeados);
 
-  List<double> doubles = [2.75, 5.5, 7.25];
-  final triplo = (e) => e * 3;
-  final Function moeda =
-      (e) => 'RS ${e.toDouble.toStringAsFixed(2).replaceFirst('.', ',')}';
-  Function porcentagem(double desconto) =>
-      (double valor) => desconto * valor; // closure
-  List<dynamic> doubleMapeados = doubles
-      .map(triplo)
-      .map(porcentagem(0.9))
-      .toList(); // não consegui passar a porcentagem, voltar depois para descobrir
-  print(doubleMapeados);
+  // List<double> doubles = [2.75, 5.5, 7.25];
+  // final triplo = (e) => e * 3;
+  // final Function moeda = (e) => 'RS ${e.toDouble.toStringAsFixed(2).replaceFirst('.', ',')}';
+  // Function porcentagem(double desconto) =>
+  //     (double valor) => desconto * valor; // closure
+  // List<dynamic> doubleMapeados = doubles
+  //     .map(triplo)
+  //     .map(porcentagem(0.9))
+  //     .toList(); // não consegui passar a porcentagem, voltar depois para descobrir
+  // print(doubleMapeados);
 }
 
 main() {
