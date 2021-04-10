@@ -169,6 +169,7 @@ void jsonDelete() async {
 }
 
 void main() {
+  // descomente as funções para testar os métodos
   // jsonGet();
   // jsonPost();
   // jsonPut();
